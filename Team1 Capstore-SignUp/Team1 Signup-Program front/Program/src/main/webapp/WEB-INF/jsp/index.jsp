@@ -24,10 +24,10 @@
     </ul>
     <div class="tab-content">
         <div id="signin-agile">   
-			<form action="localhost:4448/savecustomers/{id}/{password}"
+			<form action="/customer"
 			 method="post">
 				<p class="header">User id</p>
-				<input type="email" name="Id" placeholder="Your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Full Name';}" required="required">
+				<input type="email" name="id" placeholder="Your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Full Name';}" required="required">
 				
 				<p class="header">User Name</p>
 				<input type="text" name="userName" placeholder="User Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" required="required">
@@ -58,7 +58,7 @@
 			 <p>Already have an account? <a href="http://localhost:4441/savecustomers">Sign IN</a>.</p>
 		</div>
 		<div id="signup-agile">   
-			<form action="login.jsp" method="post">
+			<form action="/merchant" method="post">
 				<p class="header">Merchant Id</p>
 				<input type="email" name="id" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="required">
 				
