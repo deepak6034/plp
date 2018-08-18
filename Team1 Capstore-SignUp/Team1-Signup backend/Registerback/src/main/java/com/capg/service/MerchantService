@@ -1,0 +1,6 @@
+package com.capg.service;
+
+public interface MerchantService {
+	public void saveMerchant(String id, String password);
+
+}
